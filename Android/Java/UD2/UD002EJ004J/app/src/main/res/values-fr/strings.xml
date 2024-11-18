@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UD02EJ004J</string>
+    <string name="language_prompt">La langue du système est définie en %s</string>
+    <string name="button_spanish">Espagnol</string>
+    <string name="button_english">Anglais</string>
+    <string name="button_french">Français</string>
+    <string name="button_italian">Italien</string>
+    <string name="language_prompt_2">La langue de l\'application est définie en %s</string>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Practica</string>
+    <string name="tituloActividad">Actividad 1</string>
+    <string name="boton2">Ir a la actividad 2</string>
+    <string name="boton3">Ir a la actividad 3</string>
+    <string name="tituloActividad2">Actividad 2</string>
+    <string name="boton1">Ir a la actividad 1</string>
+    <string name="tituloActividad3">Actividad 3</string>
+</resources>
