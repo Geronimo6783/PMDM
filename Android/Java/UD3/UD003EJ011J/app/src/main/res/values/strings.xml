@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">UD003EJ011J</string>
+    <string name="boton1">Ir a Pantalla 1</string>
+    <string name="boton2">Ir a Pantalla 2</string>
+    <string name="boton3">Ir a Pantalla 3</string>
+    <string name="tituloActividad1">Pantalla actual 1</string>
+    <string name="tituloActividad2">Pantalla actual 2</string>
+    <string name="tituloActividad3">Pantalla actual 3</string>
 </resources>
