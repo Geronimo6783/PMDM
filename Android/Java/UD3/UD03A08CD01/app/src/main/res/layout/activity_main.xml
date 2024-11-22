@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+    android:padding="16dp">
+
+
+
+    <TextView
+
+        android:id="@+id/textView"
+
+        android:layout_width="381dp"
+
+        android:layout_height="119dp"
+
+        android:textAlignment="center"
+
+        android:textSize="34sp"
+
+        android:text="Intenciones" />
+
+
+
+    <Button
+
+        android:id="@+id/btnCompartir"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="Compartir"
+
+        android:onClick="compartir" />
+
+
+
+    <Button
+
+        android:id="@+id/btnAbrirWeb"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="Abrir Página Web"
+
+        android:onClick="abrirPagina" />
+
+
+
+    <Button
+
+        android:id="@+id/btnLlamar"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="Llamar por Teléfono"
+
+        android:onClick="llamarTelefono" />
+
+
+
+    <Button
+
+        android:id="@+id/btnAbrirMapa"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="Abrir Mapa"
+
+        android:onClick="verMapa" />
+
+
+
+    <Button
+
+        android:id="@+id/btnTomarFoto"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="Tomar Foto"
+
+        android:onClick="tomarFoto" />
+
+
+
+    <Button
+
+        android:id="@+id/btnEnviarCorreo"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="Enviar Correo"
+
+        android:onClick="mandarCorreo" />
+
+
+
+    <Button
+
+        android:id="@+id/btnStreetView"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:text="Street View"
+
+        android:onClick="streetview" />
+
+</LinearLayout>
