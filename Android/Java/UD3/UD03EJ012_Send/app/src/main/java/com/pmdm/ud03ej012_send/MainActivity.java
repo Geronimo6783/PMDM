@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void mandarTexto(View view){
         TextInputEditText textoIntroducido = findViewById(R.id.TextoIntroducido);
-        Intent i = new Intent(Intent.ACTION_SEND);
+        Intent i = new Intent(Intent.ACTION_EDIT);
         i.setType("text/plain");
         i.putExtra(Intent.EXTRA_TEXT, textoIntroducido.getText().toString());
         startActivity(i);
