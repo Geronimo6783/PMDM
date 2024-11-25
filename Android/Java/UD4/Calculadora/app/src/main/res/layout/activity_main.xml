@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/PanelTexto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:text="/"
+             android:onClick="anadirBarra"
+             app:cornerRadius="45dp"
+             android:layout_margin="5dp"
+             android:textSize="40sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="*"
+            android:onClick="anadirAsterisco"
+            app:cornerRadius="45dp"
+            android:layout_margin="5dp"
+            android:textSize="40sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="anadirMas"
+            android:text="+"
+            app:cornerRadius="45dp"
+            android:layout_margin="5dp"
+            android:textSize="40sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="7"
+            android:onClick="anadirSiete"
+            app:cornerRadius="45dp"
+            android:layout_margin="5dp"
+            android:textSize="40sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="8"
+            android:onClick="anadirOcho"
+            app:cornerRadius="45dp"
+            android:layout_margin="5dp"
+            android:textSize="40sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="9"
+            android:onClick="anadirNueve"
+            app:cornerRadius="45dp"
+            android:layout_margin="5dp"
+            android:textSize="40sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="4"
+            android:onClick="anadirCuatro"
+            app:cornerRadius="45dp"
+            android:layout_margin="5dp"
+            android:textSize="40sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="5"
+            android:onClick="anadirCinco"
+            app:cornerRadius="45dp"
+            android:layout_margin="5dp"
+            android:textSize="40sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="6"
+            android:onClick="anadirSeis"
+            app:cornerRadius="45dp"
+            android:layout_margin="5dp"
+            android:textSize="40sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="1"
+            android:onClick="anadirUno"
+            app:cornerRadius="45dp"
+            android:layout_margin="5dp"
+            android:textSize="40sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="2"
+            android:onClick="anadirDos"
+            app:cornerRadius="45dp"
+            android:layout_margin="5dp"
+            android:textSize="40sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="3"
+            android:onClick="anadirTres"
+            app:cornerRadius="45dp"
+            android:layout_margin="5dp"
+            android:textSize="40sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="0"
+            android:onClick="anadirCero"
+            app:cornerRadius="45dp"
+            android:layout_margin="5dp"
+            android:textSize="40sp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="="
+            android:onClick="anadirIgual"
+            app:cornerRadius="45dp"
+            android:layout_margin="5dp"
+            android:textSize="40sp"/>
+    </LinearLayout>
+
+</LinearLayout>

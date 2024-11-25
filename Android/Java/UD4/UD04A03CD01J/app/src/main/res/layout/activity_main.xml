@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!-- This button is used to show use of wrap_content -->
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wrap-content" />
+
+    <!-- As layout_width=fill_parent the button will fill the screen horizontally -->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Fill-parent" />
+
+    <!-- This is an inner layout which is parent of Button-3 -->
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#7701b1d6">
+        <!-- Layout width is made fill_parent, so this button will fill the parent i.e. the Blue area. -->
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Fill-parent" />
+    </LinearLayout>
+
+</LinearLayout>
