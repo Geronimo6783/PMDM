@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:columnCount="1"
+    android:rowCount="2">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_rowWeight="1"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <TextView
+            android:id="@+id/F0C0"
+            android:layout_rowSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/F0C1"
+            android:layout_rowSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/F0C2"
+            android:layout_rowSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/F0C3"
+            android:layout_rowSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/F1C0"
+            android:layout_rowSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/F1C1"
+            android:layout_rowSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/F1C2"
+            android:layout_rowSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/F1C3"
+            android:layout_rowSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/F2C0"
+            android:layout_rowSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/F2C1"
+            android:layout_rowSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/F2C2"
+            android:layout_rowSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/F2C3"
+            android:layout_rowSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/F3C0"
+            android:layout_rowSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/F3C1"
+            android:layout_rowSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/F3C2"
+            android:layout_rowSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/F3C3"
+            android:layout_rowSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/F4C0"
+            android:layout_rowSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/F4C1"
+            android:layout_rowSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/F4C2"
+            android:layout_rowSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/F4C3"
+            android:layout_rowSpan="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#FFFFFF"
+            />
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:background="#FFFFFF"
+        android:layout_rowWeight="1"
+        android:rowCount="1"
+        android:columnCount="2">
+
+        <GridLayout
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:columnCount="2"
+            android:rowCount="2"
+            >
+
+            <TextView
+                android:text="F"
+                android:gravity="center"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:textSize="80sp"/>
+
+            <TextView
+                android:text="C"
+                android:gravity="center"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+                android:textSize="80sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="80sp"
+                    android:gravity="center"
+                    android:id="@+id/CampoFilas"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_height="0dp"
+                android:layout_width="0dp"
+
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="80sp"
+                    android:gravity="center"
+                    android:id="@+id/CampoColumnas"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </GridLayout>
+
+        <ImageButton
+            android:id="@+id/BotonAccion"
+            android:contentDescription="Flecha"
+            android:src="@drawable/flecha"
+            android:background="#FFFF00"
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"/>
+
+    </GridLayout>
+</GridLayout>

@@ -1,6 +1,8 @@
 package com.pmdm.ud04ej003j;
 
+import android.content.DialogInterface;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -8,6 +10,7 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -66,212 +69,203 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void cambiarColorCelda(View view){
-        int fila = Integer.parseInt(String.valueOf(campoFilas.getText()));
-        int columna = Integer.parseInt(String.valueOf(campoColumnas.getText()));
-        int colorCelda;
+        try {
+            int fila = Integer.parseInt(String.valueOf(campoFilas.getText()));
+            int columna = Integer.parseInt(String.valueOf(campoColumnas.getText()));
+            int colorCelda;
 
-        switch(fila){
-            case 1:
-                switch(columna){
-                    case 1:
-                        colorCelda = celdas[0].getSolidColor();
-                        if(colorCelda == VERDE){
-                            celdas[0].setBackgroundColor(ROJO);
-                        }
-                        else{
-                            celdas[0].setBackgroundColor(VERDE);
-                        }
-                        break;
-                    case 2:
-                        colorCelda = celdas[1].getSolidColor();
-                        if(colorCelda == VERDE){
-                            celdas[1].setBackgroundColor(ROJO);
-                        }
-                        else{
-                            celdas[1].setBackgroundColor(VERDE);
-                        }
-                        break;
-                    case 3:
-                        colorCelda = celdas[2].getSolidColor();
-                        if(colorCelda == VERDE){
-                            celdas[2].setBackgroundColor(ROJO);
-                        }
-                        else{
-                            celdas[2].setBackgroundColor(VERDE);
-                        }
-                        break;
-                    case 4:
-                        colorCelda = celdas[3].getSolidColor();
-                        if(colorCelda == VERDE){
-                            celdas[3].setBackgroundColor(ROJO);
-                        }
-                        else{
-                            celdas[3].setBackgroundColor(VERDE);
-                        }
-                        break;
-                }
-                break;
-            case 2:
-                switch(columna){
-                    case 1:
-                        colorCelda = celdas[4].getSolidColor();
-                        if(colorCelda == VERDE){
-                            celdas[4].setBackgroundColor(ROJO);
-                        }
-                        else{
-                            celdas[4].setBackgroundColor(VERDE);
-                        }
-                        break;
-                    case 2:
-                        colorCelda = celdas[5].getSolidColor();
-                        if(colorCelda == VERDE){
-                            celdas[5].setBackgroundColor(ROJO);
-                        }
-                        else{
-                            celdas[5].setBackgroundColor(VERDE);
-                        }
-                        break;
-                    case 3:
-                        colorCelda = celdas[6].getSolidColor();
-                        if(colorCelda == VERDE){
-                            celdas[6].setBackgroundColor(ROJO);
-                        }
-                        else{
-                            celdas[6].setBackgroundColor(VERDE);
-                        }
-                        break;
-                    case 4:
-                        colorCelda = celdas[7].getSolidColor();
-                        if(colorCelda == VERDE){
-                            celdas[7].setBackgroundColor(ROJO);
-                        }
-                        else{
-                            celdas[7].setBackgroundColor(VERDE);
-                        }
-                        break;
-                }
-                break;
-            case 3:
-                switch(columna){
-                    case 1:
-                        colorCelda = celdas[8].getSolidColor();
-                        if(colorCelda == VERDE){
-                            celdas[8].setBackgroundColor(ROJO);
-                        }
-                        else{
-                            celdas[8].setBackgroundColor(VERDE);
-                        }
-                        break;
-                    case 2:
-                        colorCelda = celdas[9].getSolidColor();
-                        if(colorCelda == VERDE){
-                            celdas[9].setBackgroundColor(ROJO);
-                        }
-                        else{
-                            celdas[9].setBackgroundColor(VERDE);
-                        }
-                        break;
-                    case 3:
-                        colorCelda = celdas[10].getSolidColor();
-                        if(colorCelda == VERDE){
-                            celdas[10].setBackgroundColor(ROJO);
-                        }
-                        else{
-                            celdas[10].setBackgroundColor(VERDE);
-                        }
-                        break;
-                    case 4:
-                        colorCelda = celdas[11].getSolidColor();
-                        if(colorCelda == VERDE){
-                            celdas[11].setBackgroundColor(ROJO);
-                        }
-                        else{
-                            celdas[11].setBackgroundColor(VERDE);
-                        }
-                        break;
-                }
-                break;
-            case 4:
-                switch(columna){
-                    case 1:
-                        colorCelda = celdas[12].getSolidColor();
-                        if(colorCelda == VERDE){
-                            celdas[12].setBackgroundColor(ROJO);
-                        }
-                        else{
-                            celdas[12].setBackgroundColor(VERDE);
-                        }
-                        break;
-                    case 2:
-                        colorCelda = celdas[13].getSolidColor();
-                        if(colorCelda == VERDE){
-                            celdas[13].setBackgroundColor(ROJO);
-                        }
-                        else{
-                            celdas[13].setBackgroundColor(VERDE);
-                        }
-                        break;
-                    case 3:
-                        colorCelda = celdas[14].getSolidColor();
-                        if(colorCelda == VERDE){
-                            celdas[14].setBackgroundColor(ROJO);
-                        }
-                        else{
-                            celdas[14].setBackgroundColor(VERDE);
-                        }
-                        break;
-                    case 4:
-                        colorCelda = celdas[15].getSolidColor();
-                        if(colorCelda == VERDE){
-                            celdas[15].setBackgroundColor(ROJO);
-                        }
-                        else{
-                            celdas[15].setBackgroundColor(VERDE);
-                        }
-                        break;
-                }
-                break;
+            switch (fila) {
+                case 1:
+                    switch (columna) {
+                        case 1:
+                            colorCelda = ((ColorDrawable) celdas[0].getBackground()).getColor();
+                            if (colorCelda == VERDE) {
+                                celdas[0].setBackgroundColor(ROJO);
+                            } else {
+                                celdas[0].setBackgroundColor(VERDE);
+                            }
+                            break;
+                        case 2:
+                            colorCelda = ((ColorDrawable) celdas[1].getBackground()).getColor();
+                            if (colorCelda == VERDE) {
+                                celdas[1].setBackgroundColor(ROJO);
+                            } else {
+                                celdas[1].setBackgroundColor(VERDE);
+                            }
+                            break;
+                        case 3:
+                            colorCelda = ((ColorDrawable) celdas[2].getBackground()).getColor();
+                            if (colorCelda == VERDE) {
+                                celdas[2].setBackgroundColor(ROJO);
+                            } else {
+                                celdas[2].setBackgroundColor(VERDE);
+                            }
+                            break;
+                        case 4:
+                            colorCelda = ((ColorDrawable) celdas[3].getBackground()).getColor();
+                            if (colorCelda == VERDE) {
+                                celdas[3].setBackgroundColor(ROJO);
+                            } else {
+                                celdas[3].setBackgroundColor(VERDE);
+                            }
+                            break;
+                    }
+                    break;
+                case 2:
+                    switch (columna) {
+                        case 1:
+                            colorCelda = ((ColorDrawable) celdas[4].getBackground()).getColor();
+                            if (colorCelda == VERDE) {
+                                celdas[4].setBackgroundColor(ROJO);
+                            } else {
+                                celdas[4].setBackgroundColor(VERDE);
+                            }
+                            break;
+                        case 2:
+                            colorCelda = ((ColorDrawable) celdas[5].getBackground()).getColor();
+                            if (colorCelda == VERDE) {
+                                celdas[5].setBackgroundColor(ROJO);
+                            } else {
+                                celdas[5].setBackgroundColor(VERDE);
+                            }
+                            break;
+                        case 3:
+                            colorCelda = ((ColorDrawable) celdas[6].getBackground()).getColor();
+                            if (colorCelda == VERDE) {
+                                celdas[6].setBackgroundColor(ROJO);
+                            } else {
+                                celdas[6].setBackgroundColor(VERDE);
+                            }
+                            break;
+                        case 4:
+                            colorCelda = ((ColorDrawable) celdas[7].getBackground()).getColor();
+                            if (colorCelda == VERDE) {
+                                celdas[7].setBackgroundColor(ROJO);
+                            } else {
+                                celdas[7].setBackgroundColor(VERDE);
+                            }
+                            break;
+                    }
+                    break;
+                case 3:
+                    switch (columna) {
+                        case 1:
+                            colorCelda = ((ColorDrawable) celdas[8].getBackground()).getColor();
+                            if (colorCelda == VERDE) {
+                                celdas[8].setBackgroundColor(ROJO);
+                            } else {
+                                celdas[8].setBackgroundColor(VERDE);
+                            }
+                            break;
+                        case 2:
+                            colorCelda = ((ColorDrawable) celdas[9].getBackground()).getColor();
+                            if (colorCelda == VERDE) {
+                                celdas[9].setBackgroundColor(ROJO);
+                            } else {
+                                celdas[9].setBackgroundColor(VERDE);
+                            }
+                            break;
+                        case 3:
+                            colorCelda = ((ColorDrawable) celdas[10].getBackground()).getColor();
+                            if (colorCelda == VERDE) {
+                                celdas[10].setBackgroundColor(ROJO);
+                            } else {
+                                celdas[10].setBackgroundColor(VERDE);
+                            }
+                            break;
+                        case 4:
+                            colorCelda = ((ColorDrawable) celdas[11].getBackground()).getColor();
+                            if (colorCelda == VERDE) {
+                                celdas[11].setBackgroundColor(ROJO);
+                            } else {
+                                celdas[11].setBackgroundColor(VERDE);
+                            }
+                            break;
+                    }
+                    break;
+                case 4:
+                    switch (columna) {
+                        case 1:
+                            colorCelda = ((ColorDrawable) celdas[12].getBackground()).getColor();
+                            if (colorCelda == VERDE) {
+                                celdas[12].setBackgroundColor(ROJO);
+                            } else {
+                                celdas[12].setBackgroundColor(VERDE);
+                            }
+                            break;
+                        case 2:
+                            colorCelda = ((ColorDrawable) celdas[13].getBackground()).getColor();
+                            if (colorCelda == VERDE) {
+                                celdas[13].setBackgroundColor(ROJO);
+                            } else {
+                                celdas[13].setBackgroundColor(VERDE);
+                            }
+                            break;
+                        case 3:
+                            colorCelda = ((ColorDrawable) celdas[14].getBackground()).getColor();
+                            if (colorCelda == VERDE) {
+                                celdas[14].setBackgroundColor(ROJO);
+                            } else {
+                                celdas[14].setBackgroundColor(VERDE);
+                            }
+                            break;
+                        case 4:
+                            colorCelda = ((ColorDrawable) celdas[15].getBackground()).getColor();
+                            if (colorCelda == VERDE) {
+                                celdas[15].setBackgroundColor(ROJO);
+                            } else {
+                                celdas[15].setBackgroundColor(VERDE);
+                            }
+                            break;
+                    }
+                    break;
 
-            case 5:
-                switch(columna){
-                    case 1:
-                        colorCelda = celdas[16].getSolidColor();
-                        if(colorCelda == VERDE){
-                            celdas[16].setBackgroundColor(ROJO);
-                        }
-                        else{
-                            celdas[16].setBackgroundColor(VERDE);
-                        }
-                        break;
-                    case 2:
-                        colorCelda = celdas[17].getSolidColor();
-                        if(colorCelda == VERDE){
-                            celdas[17].setBackgroundColor(ROJO);
-                        }
-                        else{
-                            celdas[17].setBackgroundColor(VERDE);
-                        }
-                        break;
-                    case 3:
-                        colorCelda = celdas[18].getSolidColor();
-                        if(colorCelda == VERDE){
-                            celdas[18].setBackgroundColor(ROJO);
-                        }
-                        else{
-                            celdas[18].setBackgroundColor(VERDE);
-                        }
-                        break;
-                    case 4:
-                        colorCelda = celdas[19].getSolidColor();
-                        if(colorCelda == VERDE){
-                            celdas[19].setBackgroundColor(ROJO);
-                        }
-                        else{
-                            celdas[19].setBackgroundColor(VERDE);
-                        }
-                        break;
+                case 5:
+                    switch (columna) {
+                        case 1:
+                            colorCelda = ((ColorDrawable) celdas[16].getBackground()).getColor();
+                            if (colorCelda == VERDE) {
+                                celdas[16].setBackgroundColor(ROJO);
+                            } else {
+                                celdas[16].setBackgroundColor(VERDE);
+                            }
+                            break;
+                        case 2:
+                            colorCelda = ((ColorDrawable) celdas[17].getBackground()).getColor();
+                            if (colorCelda == VERDE) {
+                                celdas[17].setBackgroundColor(ROJO);
+                            } else {
+                                celdas[17].setBackgroundColor(VERDE);
+                            }
+                            break;
+                        case 3:
+                            colorCelda = ((ColorDrawable) celdas[18].getBackground()).getColor();
+                            if (colorCelda == VERDE) {
+                                celdas[18].setBackgroundColor(ROJO);
+                            } else {
+                                celdas[18].setBackgroundColor(VERDE);
+                            }
+                            break;
+                        case 4:
+                            colorCelda = ((ColorDrawable) celdas[19].getBackground()).getColor();
+                            if (colorCelda == VERDE) {
+                                celdas[19].setBackgroundColor(ROJO);
+                            } else {
+                                celdas[19].setBackgroundColor(VERDE);
+                            }
+                            break;
+                    }
+                    break;
+            }
+        }catch(NumberFormatException e){
+            AlertDialog.Builder dialogoDeAlerta = new AlertDialog.Builder(this);
+
+            dialogoDeAlerta.setTitle("Error").setMessage("Introduzca el número de la fila y el número de la columna").setPositiveButton("Continuar", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
                 }
-                break;
+            }).show();
         }
     }
 }
