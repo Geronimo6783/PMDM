@@ -209,38 +209,25 @@
                 android:layout_width="0dp"
                 android:textSize="80sp"/>
 
-            <com.google.android.material.textfield.TextInputLayout
+            <EditText
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:layout_height="0dp"
                 android:layout_width="0dp"
+                android:inputType="text"
+                android:textSize="80sp"
+                android:gravity="center"
+                android:id="@+id/CampoFilas"/>
 
-                >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="80sp"
-                    android:gravity="center"
-                    android:id="@+id/CampoFilas"/>
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
+            <EditText
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 android:layout_height="0dp"
                 android:layout_width="0dp"
-
-                >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:textSize="80sp"
-                    android:gravity="center"
-                    android:id="@+id/CampoColumnas"/>
-            </com.google.android.material.textfield.TextInputLayout>
-
+                android:inputType="text"
+                android:textSize="80sp"
+                android:gravity="center"
+                android:id="@+id/CampoColumnas"/>
         </GridLayout>
 
         <ImageButton
