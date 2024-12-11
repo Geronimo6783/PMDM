@@ -1,5 +1,6 @@
 package com.pmdm.ud04ej004j;
 
+import android.content.DialogInterface;
 import android.graphics.Color;
 import android.graphics.ImageDecoder;
 import android.graphics.drawable.ColorDrawable;
@@ -8,6 +9,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
@@ -59,36 +61,84 @@ public class MainActivity extends AppCompatActivity {
         botonArriba.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cambiarColorCelda(fila, columna);
-                fila--;
-                cambiarColorCelda(fila, columna);
+                if(fila > 0) {
+                    cambiarColorCelda(fila, columna);
+                    fila--;
+                    cambiarColorCelda(fila, columna);
+                }
+                else{
+                    AlertDialog.Builder dialogoDeAlerta = new AlertDialog.Builder(MainActivity.this);
+                    dialogoDeAlerta.setTitle("Se está saliendo del espacio permitido").setPositiveButton("Continuar",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    dialogInterface.dismiss();
+                                }
+                            }).show();
+                }
             }
         });
 
         botonDerecha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cambiarColorCelda(fila, columna);
-                columna++;
-                cambiarColorCelda(fila, columna);
+                if(columna < 4) {
+                    cambiarColorCelda(fila, columna);
+                    columna++;
+                    cambiarColorCelda(fila, columna);
+                }
+                else{
+                    AlertDialog.Builder dialogoDeAlerta = new AlertDialog.Builder(MainActivity.this);
+                    dialogoDeAlerta.setTitle("Se está saliendo del espacio permitido").setPositiveButton("Continuar",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    dialogInterface.dismiss();
+                                }
+                            }).show();
+                }
             }
         });
 
         botonAbajo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cambiarColorCelda(fila, columna);
-                fila++;
-                cambiarColorCelda(fila, columna);
+                if(fila < 5) {
+                    cambiarColorCelda(fila, columna);
+                    fila++;
+                    cambiarColorCelda(fila, columna);
+                }
+                else{
+                    AlertDialog.Builder dialogoDeAlerta = new AlertDialog.Builder(MainActivity.this);
+                    dialogoDeAlerta.setTitle("Se está saliendo del espacio permitido").setPositiveButton("Continuar",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    dialogInterface.dismiss();
+                                }
+                            }).show();
+                }
             }
         });
 
         botonIzquierda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                cambiarColorCelda(fila, columna);
-                columna--;
-                cambiarColorCelda(fila, columna);
+                if(columna > 0) {
+                    cambiarColorCelda(fila, columna);
+                    columna--;
+                    cambiarColorCelda(fila, columna);
+                }
+                else{
+                    AlertDialog.Builder dialogoDeAlerta = new AlertDialog.Builder(MainActivity.this);
+                    dialogoDeAlerta.setTitle("Se está saliendo del espacio permitido").setPositiveButton("Continuar",
+                            new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    dialogInterface.dismiss();
+                                }
+                            }).show();
+                }
             }
         });
     }
