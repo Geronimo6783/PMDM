@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
     private static final int ROJO = Color.parseColor("#FF0000");
 
-    private int fila = new Random().nextInt(5);
+    private int fila = new Random().nextInt(5) + 1;
 
-    private int columna = new Random().nextInt(4);
+    private int columna = new Random().nextInt(4) + 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         botonArriba.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(fila > 0) {
+                if(fila > 1) {
                     cambiarColorCelda(fila, columna);
                     fila--;
                     cambiarColorCelda(fila, columna);
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
         botonIzquierda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(columna > 0) {
+                if(columna > 1) {
                     cambiarColorCelda(fila, columna);
                     columna--;
                     cambiarColorCelda(fila, columna);
