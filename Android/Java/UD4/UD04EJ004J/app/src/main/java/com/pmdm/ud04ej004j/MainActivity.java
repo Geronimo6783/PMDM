@@ -2,16 +2,13 @@ package com.pmdm.ud04ej004j;
 
 import android.content.DialogInterface;
 import android.graphics.Color;
-import android.graphics.ImageDecoder;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TemaForma" parent="Widget.MaterialComponents.FloatingActionButton">
+        <!-- Esquinas -->
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeBottomLeft">20dp</item>
+        <item name="cornerSizeBottomRight">20dp</item>
+
+    </style>
+    <style name="TemaRelleno" parent="Widget.MaterialComponents.FloatingActionButton">
+        <!-- Relleno -->
+        <item name="rippleColor">#F40606</item>
+
+        <!-- Colores -->
+        <item name="backgroundTint">@color/color_primario</item>
+        <item name="iconTint">#000000</item>
+    </style>
+
+    <style name="RatingBarTheme" parent="Theme.MaterialComponents.DayNight">
+        <item name="ratingBarStyle">@style/Controls.RatingBar</item>
+        <item name="colorControlActivated">@color/yellow</item> <!-- Color de las estrellas activas -->
+        <item name="colorControlNormal">@color/gris</item> <!-- Color de las estrellas inactivas -->
+    </style>
+
+    <style name="Controls.RatingBar" parent="Widget.AppCompat.RatingBar.Small">
+        <item name="android:isIndicator">false</item>
+    </style>
+    <style name="ExampleText" parent="Widget.AppCompat.TextView">
+        <item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Body1</item>
+        <item name="minHeight">24dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <color name="color_primario">#9ACCF5</color>
+    <color name="yellow">#FFA500</color>
+    <color name="gris">#CCCCCC</color>
+</resources>
