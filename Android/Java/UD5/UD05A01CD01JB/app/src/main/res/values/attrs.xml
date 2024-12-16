@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTextView">
+        <attr name="customTextColor" format="color" />
+        <attr name="customFontSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomTextView3">
+        <attr name="titleFont" format="string" />
+        <attr name="titleColor" format="color" />
+        <attr name="titleSize" format="dimension" />
+        <attr name="subtitleColor" format="color" />
+        <attr name="subtitleSize" format="dimension" />
+        <attr name="colorBar" format="color" />
+    </declare-styleable>
+
+</resources>
