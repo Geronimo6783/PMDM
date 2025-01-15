@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- ListView ocupa 9/10 del espacio -->
+    <ListView
+        android:id="@+id/lista"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:divider="#F44336"
+        android:dividerHeight="2dp"/>
+
+    <!--
+    Por defecto, el tamaño del divisor puede ser cero, lo que hace que no sea visible, incluso si se establece un color.
+    Asegúrate de agregar el atributo android:dividerHeight en tu ListView para especificar el grosor del divisor, además de android:divider.
+    -->
+
+    <!-- Botón ocupa 1/10 del espacio -->
+    <Button
+        android:id="@+id/btn_siguiente"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Siguiente" />
+</LinearLayout>
