@@ -1,19 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity"
-    android:backgroundTint="#00C4FF">
+    android:background="#d9e5f5">
 
-    <ImageView
+    <LinearLayout
+        android:layout_margin="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:paddingTop="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/gradient_bottom_overlay">
+
+    <ImageView
+        android:layout_weight="1"
+        android:id="@+id/imagenHabitacion"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:paddingTop="0dp"
         android:src="@drawable/imagen1"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/nombre_habitacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retro Flat"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/descripcion_habitacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leminstro street"
+            android:layout_below="@id/nombre_habitacion"
+            android:layout_alignParentLeft="true"
+            android:textColor="#666666"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/precio"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$1200"
+            android:textColor="#666666"
+            android:textSize="30sp"
+            android:paddingBottom="10dp"
+            android:layout_below="@id/descripcion_habitacion"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/fondo"
+            android:layout_marginTop="16dp"
+            android:text="5.0"
+            android:drawableLeft="@drawable/baseline_star_24"
+            android:gravity="center"
+            android:layout_marginLeft="220dp"
+            android:layout_toRightOf="@id/precio"
+            android:layout_below="@id/descripcion_habitacion"/>
+
+        <LinearLayout
+            android:id="@+id/puntos_importantes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/precio"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="2 badrooms"
+                android:gravity="center"
+                android:background="@drawable/fondo"/>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:text="Good location"
+                android:gravity="center"
+                android:background="@drawable/fondo"/>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/fondo"
+                android:text="Privacy"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/descripcion_larga_habitacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum nisi lorem, ut congue metus efficitur id. Nunc id quam sed lectus bibendum sodales. Aenean in facilisis turpis, vel tempor velit. Aliquam semper dolor eu aliquet cursus. Nulla sodales nisi purus, at laoreet erat tincidunt at. Proin convallis purus a condimentum ornare. Donec suscipit mauris sed vulputate aliquet. Phasellus gravida justo urna, id congue lacus dapibus quis."
+            android:textColor="#666666"
+            android:layout_below="@id/puntos_importantes"/>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book this apartment"
+            android:backgroundTint="#4b5cc8"
+            android:layout_below="@id/descripcion_larga_habitacion"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
