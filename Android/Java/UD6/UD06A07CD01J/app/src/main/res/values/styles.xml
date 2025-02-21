@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="CustomOverflowMenu" parent="Theme.AppCompat.Light">
+        <!-- Cambiar el fondo del menú overflow -->
+        <item name="android:popupBackground">@color/overflow_menu_background</item>
+    </style>
+
+    <style name="ActionButton.Overflow.Icon" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_menu_overflow</item>
+    </style>
+
+    <color name="overflow_menu_background">@color/indigo_dye</color>
+</resources>

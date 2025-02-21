@@ -1,0 +1,65 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Este archivo define los estilos y temas de la aplicación. -->
+    <!-- Base application theme. -->
+    <style name="Base.Theme.UD08A11CD01J" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Este tema base hereda de Theme.Material3.DayNight.NoActionBar, lo que proporciona soporte para el tema oscuro y elimina la barra de acción. -->
+
+        <!-- Customize your light theme here. -->
+        <!-- Ejemplo comentado de cómo definir un color primario en un tema personalizado. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <!-- Color principal del tema. Este color se utiliza para la barra de herramientas, botones principales, etc. -->
+        <item name="colorPrimary">@color/new_primary_color</item>
+
+        <!-- Variante del color principal, utilizada para resaltar o diferenciar elementos relacionados con el color primario. -->
+        <item name="colorPrimaryVariant">@color/new_primary_variant_color</item>
+
+        <!-- Color secundario del tema, utilizado para elementos complementarios como botones flotantes de acción. -->
+        <item name="colorSecondary">@color/new_secondary_color</item>
+
+        <!-- Variante del color secundario, usada para destacar elementos relacionados con el color secundario. -->
+        <item name="colorSecondaryVariant">@color/new_secondary_variant_color</item>
+
+        <!-- Color de fondo de la interfaz de usuario, aplicado en las vistas principales. -->
+        <item name="android:colorBackground">@color/new_background_color</item>
+
+        <!-- Color de superficie, utilizado para fondos de tarjetas y paneles. -->
+        <item name="colorSurface">@color/new_surface_color</item>
+
+        <!-- Color de error, utilizado para indicar errores en la interfaz (como mensajes de validación). -->
+        <item name="colorError">@color/new_error_color</item>
+
+        <!-- Colores de contraste utilizados para texto o iconos sobre los colores primarios, secundarios, de fondo, etc. -->
+        <item name="colorOnPrimary">@color/new_on_primary_color</item>
+        <item name="colorOnSecondary">@color/new_on_secondary_color</item>
+        <item name="colorOnBackground">@color/new_on_background_color</item>
+        <item name="colorOnSurface">@color/new_on_surface_color</item>
+        <item name="colorOnError">@color/new_on_error_color</item>
+    </style>
+
+    <style name="CustomTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/blue</item>
+    </style>
+
+    <color name="blue">#2196F3</color>
+
+    <!-- Tema personalizado para Material Buttons -->
+    <style name="CustomMaterialButtonStyle" parent="Widget.MaterialComponents.Button">
+        <!-- Color de fondo del botón -->
+        <item name="backgroundTint">@color/custom_button_background</item>
+        <!-- Color del texto del botón -->
+        <item name="android:textColor">@color/custom_button_text</item>
+        <!-- Radio de las esquinas del botón -->
+        <item name="cornerRadius">16dp</item>
+        <!-- Grosor del borde del botón -->
+        <item name="strokeWidth">2dp</item>
+        <!-- Color del borde del botón -->
+        <item name="strokeColor">@color/custom_button_stroke</item>
+    </style>
+
+
+    <!-- Tema final de la aplicación que extiende el tema base definido anteriormente. -->
+    <style name="Theme.UD08A11CD01J" parent="Base.Theme.UD08A11CD01J" />
+
+
+</resources>

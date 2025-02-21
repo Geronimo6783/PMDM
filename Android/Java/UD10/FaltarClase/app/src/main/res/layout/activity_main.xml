@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/coche"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:src="@drawable/coche"/>
+
+        <Space
+            android:layout_width="230dp"
+            android:layout_height="0dp"/>
+
+        <ImageButton
+            android:id="@+id/lupa"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:src="@drawable/lupa"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp"/>
+
+        <ImageButton
+            android:id="@+id/borrador"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:src="@drawable/borrador"/>
+    </Toolbar>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/modelo"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:hint="Modelo">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/idCoche"
+        android:layout_toEndOf="@id/modelo"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_alignEnd="@id/kilometros"
+        android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+        android:layout_marginStart="40dp"
+        android:hint="Id">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/kilometros"
+            android:layout_below="@id/modelo"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Kilómetros">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/asignatura"
+            android:layout_below="@id/kilometros"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content"
+            android:hint="Asignatura faltada">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/guardar"
+            android:layout_width="wrap_content"
+            android:layout_alignStart="@id/asignatura"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="100dp"
+            android:layout_below="@id/asignatura"
+            android:text="Guardar"/>
+
+        <Button
+            android:id="@+id/recuperar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/asignatura"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="60dp"
+            android:layout_below="@id/asignatura"
+            android:layout_toEndOf="@id/guardar"
+            android:text="Recuperar"/>
+    </RelativeLayout>
+</LinearLayout>

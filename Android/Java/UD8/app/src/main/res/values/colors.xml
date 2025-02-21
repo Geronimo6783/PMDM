@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Colores personalizados del tema -->
+    <color name="new_primary_color">#FF8C00</color> <!-- Naranja oscuro -->
+    <color name="new_primary_variant_color">#FFA500</color> <!-- Naranja -->
+    <color name="new_secondary_color">#FFD700</color> <!-- Oro -->
+    <color name="new_secondary_variant_color">#FFFF00</color> <!-- Amarillo -->
+    <color name="new_background_color">#FFF5E6</color> <!-- Beige claro -->
+    <color name="new_surface_color">#FFFAF0</color> <!-- Blanco floral -->
+    <color name="new_error_color">#FF4500</color> <!-- Rojo-naranja -->
+    <color name="new_on_primary_color">#FFFFFF</color> <!-- Blanco -->
+    <color name="new_on_secondary_color">#000000</color> <!-- Negro -->
+    <color name="new_on_background_color">#333333</color> <!-- Gris oscuro -->
+    <color name="new_on_surface_color">#333333</color> <!-- Gris oscuro -->
+    <color name="new_on_error_color">#FFFFFF</color> <!-- Blanco -->
+
+    <color name="custom_button_background">#FF6200EE</color> <!-- Morado -->
+    <color name="custom_button_text">#FFFFFFFF</color>       <!-- Blanco -->
+    <color name="custom_button_stroke">#FF3700B3</color>    <!-- Morado oscuro -->
+
+</resources>

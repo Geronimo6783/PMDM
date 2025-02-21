@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">UD06A07CD01J</string>
+    <string name="print_action">Imprimir</string>
+    <string name="share_action">Compartir</string>
+    <string name="edit_action">Editar</string>
+    <string name="delete_action">Eliminar</string>
+    <string name="search_action">Buscar</string>
+    <string name="create_pdf_action">Generar PDF</string>
+    <string name="send_action">Enviar</string>
+    <string name="mark_as_paid_action">Marcar como pagada</string>
+</resources>

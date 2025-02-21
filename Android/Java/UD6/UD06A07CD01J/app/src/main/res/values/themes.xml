@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.UD06A07CD01J" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Colores personalizados -->
+        <item name="colorPrimary">@color/indigo_dye</item> <!-- #033f63 -->
+        <item name="colorPrimaryVariant">@color/sage</item> <!-- #28666e -->
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/blue_green</item> <!-- #7c9885 -->
+        <item name="colorSecondaryVariant">@color/moss_green</item> <!-- #b5b682 -->
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Aplica el tema al menú overflow -->
+        <item name="actionOverflowMenuStyle">@style/CustomOverflowMenu</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionButton.Overflow.Icon</item>
+
+    </style>
+
+    <style name="Theme.UD06A07CD01J" parent="Base.Theme.UD06A07CD01J" />
+
+</resources>

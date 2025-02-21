@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Imagen en la parte superior -->
+    <ImageView
+        android:id="@+id/imagePlanet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/saturno"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"/>
+
+    <!-- Cuadros de texto para nombre, radio y distancia al sol -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del planeta"
+        android:layout_below="@id/imagePlanet"/>
+
+    <EditText
+        android:id="@+id/editTextRadius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Radio del planeta (en km)"
+        android:layout_below="@id/editTextName"/>
+
+    <EditText
+        android:id="@+id/editTextDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Distancia al sol (en UA)"
+        android:layout_below="@id/editTextRadius"/>
+
+    <!-- Botones para añadir planeta y ver los planetas guardados -->
+    <Button
+        android:id="@+id/buttonAddPlanet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Añadir Planeta"
+        android:layout_below="@id/editTextDistance"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/buttonShowPlanets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver Planetas Guardados"
+        android:layout_below="@id/editTextDistance"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

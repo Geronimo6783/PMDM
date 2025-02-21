@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Tema personalizado para Material Buttons"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:background="@color/black"/>
+
+    <!-- Tema principal -->
+    <LinearLayout
+        android:id="@+id/tema1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Botón (tema por defecto)"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:layout_margin="16dp"/>
+
+    </LinearLayout>
+
+    <!-- Tema modificado para los botones -->
+    <LinearLayout
+        android:id="@+id/temaMaterialButton"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#CADCFB"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Botón personalizado"
+            style="@style/CustomMaterialButtonStyle"
+            android:layout_margin="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/siguientePantalla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Siguiente pantalla"/>
+
+    </LinearLayout>
+
+</LinearLayout>

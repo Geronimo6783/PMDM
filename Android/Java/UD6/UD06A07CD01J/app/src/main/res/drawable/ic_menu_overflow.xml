@@ -1,0 +1,32 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Círculo exterior -->
+    <path
+        android:strokeWidth="1"
+        android:strokeColor="@color/white"
+        android:pathData="M12,2a10,10 0 1,1 0,20a10,10 0 1,1 0,-20" />
+
+    <!-- Línea superior -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M7,8h5v1H7z" />
+
+    <!-- Línea media -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M7,12h10v1H7z" />
+
+    <!-- Línea media -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M7,16h10v1H7z" />
+
+    <!-- Flecha hacia abajo -->
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M17,8l-2,2l-2,-2z" />
+</vector>

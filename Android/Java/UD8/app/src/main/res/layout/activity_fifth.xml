@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Tema personalizado para Material Buttons"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:background="@color/black"/>
+
+    <!-- Tema principal -->
+    <LinearLayout
+        android:id="@+id/tema1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Botón (tema por defecto)"
+            android:icon="@drawable/ic_launcher_foreground"
+            android:layout_margin="16dp"/>
+
+    </LinearLayout>
+
+    <!-- Botón personalizado -->
+    <LinearLayout
+        android:id="@+id/botonSuscribirse"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:background="#C4D9FD"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBSCRIBE"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@android:color/white"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_thumb_up"
+            android:drawablePadding="8dp"
+            android:background="@drawable/gradient_button2"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBSCRIBE"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_thumb_up"
+            app:backgroundTint="@null"
+            android:background="@drawable/gradient_button2" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBSCRIBE"
+            android:layout_margin="16dp"
+            android:background="@drawable/gradient_button"
+            style="@style/CustomMaterialButtonStyle2" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <!-- Floating Action Button -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/switch_theme"
+            app:srcCompat="@drawable/ic_launcher_foreground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
