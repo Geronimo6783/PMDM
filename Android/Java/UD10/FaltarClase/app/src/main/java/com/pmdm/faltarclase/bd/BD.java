@@ -42,6 +42,10 @@ public class BD extends SQLiteOpenHelper {
         baseDeDatos.insert(TABLA, null, datos);
     }
 
+    public void eliminarDatos(int id){
+        getWritableDatabase().delete(TABLA, COLUMNA_ID + "=" + id, null);
+    }
+
     public DTODatos obtenerDatos(int id){
         Cursor cursor = getReadableDatabase().query(TABLA, null, COLUMNA_ID + " = " + Integer.toString(id), null, null, null, null);
 

@@ -4,6 +4,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         asignatura = findViewById(R.id.asignatura);
         Button guardar = findViewById(R.id.guardar);
         Button recuperar = findViewById(R.id.recuperar);
+        ImageButton eliminar = findViewById(R.id.borrador);
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -47,6 +49,22 @@ public class MainActivity extends AppCompatActivity {
                 recuperar(null);
             }
         });
+        eliminar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                eliminar(null);
+            }
+        });
+    }
+
+    private void eliminar(View view){
+        try{
+            int identificador = Integer.parseInt(id.getEditText().getText().toString());
+            baseDeDatos.eliminarDatos(identificador);
+        }
+        catch(NumberFormatException | NullPointerException e){
+            mostrarDialogo("No se ha introducido un identificador válido.");
+        }
     }
 
     private void guardar(View view){
