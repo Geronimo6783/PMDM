@@ -43,7 +43,7 @@ public class BD extends SQLiteOpenHelper {
     }
 
     public void eliminarDatos(int id){
-        getWritableDatabase().delete(TABLA, COLUMNA_ID + "=" + id, null);
+        getWritableDatabase().execSQL("DELETE FROM " + TABLA + " WHERE " + COLUMNA_ID + "=" + id);
     }
 
     public DTODatos obtenerDatos(int id){
@@ -54,10 +54,6 @@ public class BD extends SQLiteOpenHelper {
         }
 
         return null;
-    }
-
-    public void eliminarUsuario(int id){
-        getWritableDatabase().delete(TABLA, COLUMNA_ID + "=?", new String[]{String.valueOf(id)});
     }
 
     @Override

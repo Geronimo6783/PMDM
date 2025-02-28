@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CardViewIntroducciónDatos" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#aac7ff</item>
+        <item name="colorSecondary">#565f71</item>
+    </style>
+</resources>

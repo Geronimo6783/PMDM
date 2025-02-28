@@ -2,6 +2,7 @@ package com.pmdm.faltarclase;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         Button guardar = findViewById(R.id.guardar);
         Button recuperar = findViewById(R.id.recuperar);
         ImageButton eliminar = findViewById(R.id.borrador);
+        ImageButton buscar = findViewById(R.id.lupa);
         guardar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,6 +46,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         recuperar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                recuperar(null);
+            }
+        });
+        buscar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 recuperar(null);
@@ -61,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         try{
             int identificador = Integer.parseInt(id.getEditText().getText().toString());
             baseDeDatos.eliminarDatos(identificador);
+            mostrarDialogo("Se ha borrado el registro correctamente.");
         }
         catch(NumberFormatException | NullPointerException e){
             mostrarDialogo("No se ha introducido un identificador válido.");
