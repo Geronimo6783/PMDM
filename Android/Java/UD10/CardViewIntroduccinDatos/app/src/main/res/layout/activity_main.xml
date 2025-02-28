@@ -7,10 +7,11 @@
 
     <Toolbar
         android:layout_width="match_parent"
+        android:paddingTop="10dp"
         android:layout_height="wrap_content"
         android:background="?attr/colorPrimary">
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/cambioTema"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
